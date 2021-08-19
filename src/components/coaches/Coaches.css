@@ -1,0 +1,14 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  /* Assuming we want our rows to be a fixed height – could be left as the default `auto` if we want the height to respond to the content */
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,33 @@
+.coach {
+  background-color: var(--light-grey-2);
+  color: var(--primary-color);
+  transition: all ease-in-out 300ms;
+}
+
+.coach:nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+.coach:hover {
+  cursor: pointer;
+  background-color: var(--light-color);
+}
+
+.coach:nth-child(odd):hover {
+  background-color: var(--light-grey-2);
+}
+
+.coach-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+.coach-info {
+  padding: 1rem;
+}
+
+.coach-name {
+  margin-bottom: 0.5rem;
+}

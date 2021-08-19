@@ -1,0 +1,40 @@
+.timetable {
+  margin: 2rem 0;
+}
+
+tr {
+  border-bottom: 1px solid var(--light-color);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+th {
+  padding: 0.5rem 1rem;
+}
+
+td {
+  padding: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+td:first-child {
+  font-weight: 400;
+}
+
+td,
+th {
+  border-right: 1px solid var(--light-color);
+}
+
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+
+.timetable-mobile {
+  margin-top: 2rem;
+  display: inline-block;
+}

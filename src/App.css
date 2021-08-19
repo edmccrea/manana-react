@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #1d2331;
+  --primary-light: #1d2331c1;
+  --secondary-color: #ed3142;
+  --secondary-dark: #112d4e;
+  --light-color: #f3eff0;
+  --dark-color: #343a40;
+  --light-grey: #e0e0e0;
+  --light-grey-2: #d7d7d7;
+  --success-color: #5cb85c;
+  --danger-color: #d9534f;
+}
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  line-height: 1;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a,
+p,
+textarea,
+thead,
+td,
+label {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  min-height: calc(100vh - 140px);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--secondary-color);
+}
