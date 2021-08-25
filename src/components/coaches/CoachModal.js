@@ -1,11 +1,29 @@
 import React from 'react';
-import './CoachModal.css';
+import './CoachModal.scss';
 
-const CoachModal = ({ coach }) => {
+const CoachModal = ({ coach, setCoachDisplay }) => {
+  // document.addEventListener(
+  //   'click',
+  //   function (event) {
+  //     if (
+  //       (event.target.matches('.btn-close-modal') && setCoachDisplay) ||
+  //       (!event.target.closest('.modal-container') && setCoachDisplay)
+  //     ) {
+  //       setCoachDisplay(false);
+  //       document.body.style.overflow = 'scroll';
+  //     }
+  //   },
+  //   false
+  // );
+
+  const hideCoach = () => {
+    setCoachDisplay(false);
+    document.body.style.overflow = 'scroll';
+  };
   return (
     <div className='modal-bg'>
       <div className='modal-container'>
-        <img src={coach.image} alt='' className='coach-img modal-img' />
+        <img src={coach.image} alt='' className='modal-img' />
         <div className='coach-info'>
           <h1>{coach.name}</h1>
           <p>
@@ -19,6 +37,9 @@ const CoachModal = ({ coach }) => {
             delectus alias fuga. Obcaecati quos ut, enim cupiditate iste omnis
             aut?
           </p>
+          <button className='btn-close-modal' onClick={hideCoach}>
+            Close
+          </button>
         </div>
       </div>
     </div>

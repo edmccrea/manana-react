@@ -1,6 +1,6 @@
 import React from 'react';
 import Coach from './Coach';
-import './Coaches.css';
+import './Coaches.scss';
 
 const Coaches = () => {
   const coaches = [

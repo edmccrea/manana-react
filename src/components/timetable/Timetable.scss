@@ -1,5 +1,5 @@
 .timetable {
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 tr {
@@ -35,6 +35,15 @@ th:last-child {
 }
 
 .timetable-mobile {
-  margin-top: 2rem;
-  display: inline-block;
+  margin: 2rem auto;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .timetable-mobile {
+    display: inline-block;
+  }
+  .timetable-desktop {
+    display: none;
+  }
 }

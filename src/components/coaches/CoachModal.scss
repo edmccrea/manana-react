@@ -1,0 +1,49 @@
+.modal-bg {
+  position: fixed;
+  background-color: #0000009e;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  position: relative;
+  background-color: var(--light-color);
+  width: 40vw;
+  max-height: 90vh;
+  color: var(--primary-color);
+  overflow-y: auto;
+}
+
+.modal-img {
+  max-height: 50%;
+  object-fit: cover;
+  object-position: 0 10%;
+  width: 100%;
+}
+
+.coach-info {
+  margin: 0 1rem;
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-container {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal-container {
+    width: 60vw;
+  }
+}
