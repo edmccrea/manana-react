@@ -1,6 +1,7 @@
 .contact-container {
   display: flex;
-  margin-top: 3rem;
+  margin: 3rem 0;
+  justify-content: space-between;
 }
 
 .contact-info,
@@ -10,8 +11,7 @@
 
 .contact-info {
   .info-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 70%;
     .contact-top {
       margin-bottom: 3rem;
       h1 {
@@ -20,6 +20,25 @@
     }
     .contact-links {
       margin-bottom: 3rem;
+      h2 {
+        font-size: 2rem;
+      }
+      .contact-link {
+        margin-bottom: 1rem;
+        transition: all ease-in-out 300ms;
+        &:hover {
+          color: var(--light-grey);
+        }
+        .icon-box {
+          display: inline-block;
+          width: 50px;
+          .social-icon {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .contact-map {
       h2 {
         font-size: 2rem;
       }
@@ -32,7 +51,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto;
+    margin: 2.5rem 0 0 auto;
     input {
       background-color: transparent;
       border: none;
@@ -42,6 +61,9 @@
       &:focus,
       &:active {
         outline: none;
+      }
+      &:hover {
+        border-bottom: 2px solid var(--secondary-color);
       }
     }
     button {
@@ -58,4 +80,9 @@
       }
     }
   }
+}
+
+.map {
+  width: 90%;
+  height: 250px;
 }

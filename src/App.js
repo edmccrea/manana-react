@@ -5,9 +5,9 @@ import Navbar from './components/layout/Navbar';
 import Landing from './components/Landing';
 import Classes from './components/classes/Classes';
 import Timetable from './components/timetable/Timetable';
-import Pricing from './components/Pricing';
+import Pricing from './components/pricing/Pricing';
 import Coaches from './components/coaches/Coaches';
-import News from './components/News';
+import News from './components/news/News';
 import Contact from './components/Contact';
 import Footer from './components/layout/Footer';
 
