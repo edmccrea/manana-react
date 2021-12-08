@@ -3,26 +3,29 @@ import './Coach.scss';
 import CoachModal from './CoachModal';
 
 const Coach = ({ coach }) => {
-  const [coachDisplay, setCoachDisplay] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const modalHandler = () => {
+    if (showModal) {
+      setShowModal(false);
+      document.body.style.overflow = 'scroll';
+    }
 
-  const displayCoach = () => {
-    setCoachDisplay(true);
-    document.body.style.overflow = 'hidden';
-    console.log('clicked');
+    if (!showModal) {
+      setShowModal(true);
+      document.body.style.overflow = 'hidden';
+    }
   };
 
   return (
     <Fragment>
-      <div className='coach' onClick={displayCoach}>
+      <div className='coach' onClick={modalHandler}>
         <img src={coach.image} alt='' className='coach-img' />
         <div className='coach-info'>
-          <h2 className='coach-name'>{coach.name}</h2>
+          <h3 className='coach-name'>{coach.name}</h3>
           <p className='coach-discipline'>{coach.discipline}</p>
         </div>
       </div>
-      {coachDisplay && (
-        <CoachModal coach={coach} setCoachDisplay={setCoachDisplay} />
-      )}
+      {showModal && <CoachModal coach={coach} modalHandler={modalHandler} />}
     </Fragment>
   );
 };

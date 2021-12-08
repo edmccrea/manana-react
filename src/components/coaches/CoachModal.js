@@ -1,31 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './CoachModal.scss';
 
-const CoachModal = ({ coach, setCoachDisplay }) => {
-  // document.addEventListener(
-  //   'click',
-  //   function (event) {
-  //     if (
-  //       (event.target.matches('.btn-close-modal') && setCoachDisplay) ||
-  //       (!event.target.closest('.modal-container') && setCoachDisplay)
-  //     ) {
-  //       setCoachDisplay(false);
-  //       document.body.style.overflow = 'scroll';
-  //     }
-  //   },
-  //   false
-  // );
-
-  const hideCoach = () => {
-    setCoachDisplay(false);
-    document.body.style.overflow = 'scroll';
-  };
+const CoachModal = ({ coach, modalHandler }) => {
   return (
-    <div className='modal-bg'>
+    <Fragment>
+      <div className='modal-bg' onClick={modalHandler}></div>
       <div className='modal-container'>
-        <img src={coach.image} alt='' className='modal-img' />
+        <p className='close-btn' onClick={modalHandler}>
+          x
+        </p>
         <div className='coach-info'>
-          <h1>{coach.name}</h1>
+          <h2 className='coach-name'>{coach.name}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis dignissimos alias placeat cupiditate, quisquam rem,
@@ -37,12 +22,12 @@ const CoachModal = ({ coach, setCoachDisplay }) => {
             delectus alias fuga. Obcaecati quos ut, enim cupiditate iste omnis
             aut?
           </p>
-          <button className='btn-close-modal' onClick={hideCoach}>
-            Close
-          </button>
+        </div>
+        <div className='modal-img-container'>
+          <img src={coach.image} alt='' className='modal-img' />
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

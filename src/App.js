@@ -21,7 +21,7 @@ function App() {
           <Route exact path='/classes' component={Classes} />
           <Route exact path='/timetable' component={Timetable} />
           <Route exact path='/pricing' component={Pricing} />
-          <Route exact path='/coaches' component={Coaches} />
+          <Route exact path='/instructors' component={Coaches} />
           <Route exact path='/news' component={News} />
           <Route exact path='/contact' component={Contact} />
         </Switch>

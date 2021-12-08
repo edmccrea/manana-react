@@ -3,7 +3,7 @@
 }
 
 tr {
-  border-bottom: 1px solid var(--light-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 tbody tr:last-child {
@@ -26,7 +26,7 @@ td:first-child {
 
 td,
 th {
-  border-right: 1px solid var(--light-color);
+  border-right: 1px solid var(--primary-color);
 }
 
 td:last-child,

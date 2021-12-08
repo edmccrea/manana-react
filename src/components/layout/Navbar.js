@@ -1,18 +1,19 @@
 import React from 'react';
-import './Navbar.css';
+import './Navbar.scss';
+import logo from '../../imgs/manjana_color.png';
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
       <a href='/' className='logo'>
-        MAÑANA
+        <img src={logo} alt='' />
       </a>
       <ul className='navbar-nav'>
         <a href='/classes' className='nav-link'>
           <li>Classes</li>
         </a>
-        <a href='/coaches' className='nav-link'>
-          <li>Coaches</li>
+        <a href='/instructors' className='nav-link'>
+          <li>Instructors</li>
         </a>
         <a href='/timetable' className='nav-link'>
           <li>Timetable</li>

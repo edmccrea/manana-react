@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='contact-info'>
           <div className='info-container'>
             <div className='contact-top'>
-              <h1>Get in touch</h1>
+              <h2>Get in touch</h2>
               <p>
                 Have some questions regarding classes, experience, facilities,
                 or anything else? Shoot us an email or contact us through our
@@ -43,20 +43,6 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className='contact-map'>
-              <h2>Where to find us</h2>
-
-              <iframe
-                className='map'
-                title='map'
-                id='gmap_canvas'
-                src='https://maps.google.com/maps?q=Bj%C3%B6rnstjernegatan%2018,%20271%2039Ystad&t=&z=15&ie=UTF8&iwloc=&output=embed'
-                frameborder='0'
-                scrolling='no'
-                marginheight='0'
-                marginwidth='0'
-              />
-            </div>
           </div>
         </div>
 
@@ -70,6 +56,28 @@ const Contact = () => {
             <input type='text' name='message' />
             <button>Submit</button>
           </form>
+        </div>
+      </div>
+
+      <div className='map-details'>
+        <h2>Where to find us</h2>
+
+        <div className='map-container'>
+          <div className='contact-map'>
+            <iframe
+              className='map'
+              title='map'
+              id='gmap_canvas'
+              src='https://maps.google.com/maps?q=Bj%C3%B6rnstjernegatan%2018,%20271%2039Ystad&t=&z=15&ie=UTF8&iwloc=&output=embed'
+              scrolling='no'
+            />
+          </div>
+          <div className='address-text'>
+            <p>KFUM Huset</p>
+            <p>Björnstjernegatan 18</p>
+            <p>Ystad</p>
+            <p>271 39</p>
+          </div>
         </div>
       </div>
     </div>
