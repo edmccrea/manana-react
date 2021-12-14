@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: 'Anders Öhdahl',
+    name: 'Anders Ödahl',
     discipline: 'BJJ',
     image:
       'https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/131026252_2881906708751481_5061804733425185226_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=z4PgHReVwMcAX9chCFw&_nc_ht=scontent-cph2-1.xx&oh=4e520a0b688922417eb1b304b7762c38&oe=61D510F9',

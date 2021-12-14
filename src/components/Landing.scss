@@ -2,10 +2,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  .section-container {
+    width: 70%;
+    margin: 0 auto;
+    h2 {
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+  }
+
   .hero {
     height: calc(100vh - 90px);
-    width: 100%;
-    margin: 2rem;
+    width: 70%;
+    margin: 2rem auto;
     display: flex;
     .hero-text {
       margin: 0 2rem;
@@ -47,12 +57,6 @@
     background: var(--primary-color);
     color: var(--light-color);
     .about-container {
-      width: 70%;
-      margin: 0 auto;
-      h2 {
-        margin: 2rem 0;
-        font-size: 2rem;
-      }
       .about-sections {
         display: flex;
         margin-bottom: 3rem;
@@ -88,12 +92,7 @@
 
   .landing-instructors {
     .instructors-container {
-      width: 70%;
-      margin: 0 auto 4rem;
-      h2 {
-        margin: 2rem 0;
-        font-size: 2rem;
-      }
+      margin-bottom: 4rem;
       .card-container {
         color: var(--primary-color);
         display: grid;
@@ -109,9 +108,12 @@
   }
 
   .faq {
-    height: 50vh;
+    min-height: 50vh;
     background-color: var(--primary-color);
     color: var(--light-color);
+    .faq-container {
+      margin-bottom: 3rem;
+    }
   }
 
   .sponsors {
@@ -129,7 +131,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .landing-container {
     .hero {
       margin-top: 4rem;
@@ -143,6 +145,45 @@
         }
         p {
           font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .landing-container {
+    .hero {
+      margin: 2rem 0;
+      justify-content: center;
+      .hero-text {
+        text-align: center;
+        width: 70%;
+        h1 {
+          text-align: center;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      .hero-img {
+        display: none;
+      }
+    }
+  }
+
+  .about {
+    .about-container {
+      .about-sections {
+        flex-direction: column;
+        .about-text {
+          p {
+            margin-right: 0;
+            width: 100%;
+          }
+        }
+        .about-links {
+          width: 100%;
         }
       }
     }

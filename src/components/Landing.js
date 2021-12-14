@@ -6,6 +6,7 @@ import rebelz from '../imgs/rebelz.png';
 import coaches from '../utils/coaches';
 
 import Coach from './coaches/Coach';
+import Accordian from './faq/Accordian';
 
 const Landing = () => {
   return (
@@ -32,7 +33,7 @@ const Landing = () => {
       </section>
 
       <section className='about' id='about'>
-        <div className='about-container'>
+        <div className='about-container section-container'>
           <h2>About</h2>
           <div className='about-sections'>
             <div className='about-text'>
@@ -70,7 +71,7 @@ const Landing = () => {
       </section>
 
       <section className='landing-instructors'>
-        <div className='instructors-container'>
+        <div className='instructors-container section-container'>
           <h2>Our Instructors</h2>
           <div className='card-container'>
             <Coach coach={coaches[0]} />
@@ -86,9 +87,9 @@ const Landing = () => {
       </section>
 
       <section className='faq'>
-        <div className='faq-container'>
-          <h2>FAQ</h2>
-          <div className='accordian'></div>
+        <div className='faq-container section-container'>
+          <h2>Frequently Asked Questions</h2>
+          <Accordian />
         </div>
       </section>
 
